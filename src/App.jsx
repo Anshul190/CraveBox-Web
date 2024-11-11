@@ -4,6 +4,7 @@ import About from "./About";
 import Contact from "./Contact";
 import Grocery from "./Grocery";
 import Body from "./Body";
+import Login from "./Login";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 
 
@@ -35,7 +36,11 @@ const appRouter = createBrowserRouter([{
   {
       path: "/Grocery",
       element: <Grocery/>,
-  }],
+  },
+  {
+    path: "/Login",
+    element: <Login/>,
+}],
   errorElement:<Error/>
 },
 ]);

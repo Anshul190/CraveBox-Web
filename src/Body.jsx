@@ -28,7 +28,7 @@ function Body(){
                         setSearchText(e.target.value);
                     }}>
                     </input>
-                    <button className="Search-btn, px-4 py-2 bg-black m-4 rounded-lg text-white hover:bg-gray-500" onClick={()=>{
+                    <button className="Search-btn, px-4 py-2 m-4 rounded-lg bg-gray-800 dark:bg-gray-900 text-white font-semibold hover:bg-gray-900 dark:hover:bg-black transition-all duration-300" onClick={()=>{
                         const FilteredList = ListofRestraunts.filter(
                             (res)=>
                                 res.info.name.toLowerCase().includes(SearchText.toLowerCase())
@@ -37,7 +37,7 @@ function Body(){
                     }}>Search</button>
             </div>
             <div className="Filter-btn">
-                <button className="FilterRestraunts-btn, rounded-lg bg-black text-white m-4 px-2 py-2  hover:bg-gray-500" onClick={()=>{
+                <button className="FilterRestraunts-btn, px-4 py-2 m-4 rounded-lg bg-gray-800 dark:bg-gray-900 text-white font-semibold hover:bg-gray-900 dark:hover:bg-black transition-all duration-300" onClick={()=>{
                     const filteredRestraunts = ListofRestraunts.filter(
                         (e) => e.info.avgRating > 4.3
                     );
