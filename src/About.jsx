@@ -26,7 +26,7 @@ function About() {
       <p className="mb-4">
         Become a part of our community of food enthusiasts. Download our app or visit our website to get started. We look forward to serving you the best dishes from your favorite places.
       </p>
-      <button className="bg-blue-600 dark:bg-blue-500 text-white py-2 px-4 rounded mt-4 hover:bg-blue-700 dark:hover:bg-blue-600">
+      <button className="bg-blue-600 dark:bg-blue-700 text-white py-2 px-4 rounded mt-4 hover:bg-blue-700 dark:hover:bg-blue-600">
         Start Your Order
       </button>
     </div>

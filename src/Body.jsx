@@ -18,6 +18,7 @@ function Body(){
         setfilteredListofRestraunts(json.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     }
 
+    
 
 
     return(
@@ -28,7 +29,7 @@ function Body(){
                         setSearchText(e.target.value);
                     }}>
                     </input>
-                    <button className="Search-btn, px-4 py-2 m-4 rounded-lg bg-gray-800 dark:bg-gray-900 text-white font-semibold hover:bg-gray-900 dark:hover:bg-black transition-all duration-300" onClick={()=>{
+                    <button className="Search-btn, px-4 py-2 m-4 rounded-lg -blue-600 dark:bg-blue-700 text-white font-semibold hover:bg-blue-700 dark:hover:bg-blue-600 transition-all duration-300" onClick={()=>{
                         const FilteredList = ListofRestraunts.filter(
                             (res)=>
                                 res.info.name.toLowerCase().includes(SearchText.toLowerCase())
@@ -37,7 +38,7 @@ function Body(){
                     }}>Search</button>
             </div>
             <div className="Filter-btn">
-                <button className="FilterRestraunts-btn, px-4 py-2 m-4 rounded-lg bg-gray-800 dark:bg-gray-900 text-white font-semibold hover:bg-gray-900 dark:hover:bg-black transition-all duration-300" onClick={()=>{
+                <button className="FilterRestraunts-btn, px-4 py-2 m-4 rounded-lg -blue-600 dark:bg-blue-700 text-white font-semibold hover:bg-blue-900 dark:hover:bg-blue-600 transition-all duration-300" onClick={()=>{
                     const filteredRestraunts = ListofRestraunts.filter(
                         (e) => e.info.avgRating > 4.3
                     );

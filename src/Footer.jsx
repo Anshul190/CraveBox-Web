@@ -1,4 +1,5 @@
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { Link } from "react-router-dom";
 function Footer(){
     return (
         <footer className="bg-gray-800 dark:bg-gray-900 text-gray-300 py-8">
@@ -13,7 +14,7 @@ function Footer(){
               {/* Social Media Icons */}
               <div className="flex space-x-6">
                 <a
-                  href="https://facebook.com"
+                  href="https://facebook.com/anshulsingh0519"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-all duration-300"
@@ -21,7 +22,7 @@ function Footer(){
                   <FaFacebookF size={24} />
                 </a>
                 <a
-                  href="https://twitter.com"
+                  href="https://x.com/anshulsingh0519"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-all duration-300"
@@ -29,7 +30,7 @@ function Footer(){
                   <FaTwitter size={24} />
                 </a>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/anshul.singh.official/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-all duration-300"
@@ -37,7 +38,7 @@ function Footer(){
                   <FaInstagram size={24} />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/anshulsingh0519"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-all duration-300"
@@ -67,7 +68,7 @@ function Footer(){
                 <a href="#" className="text-gray-400 hover:text-white">
                   Terms of Service
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="/contact" className="text-gray-400 hover:text-white">
                   Contact Us
                 </a>
               </div>
