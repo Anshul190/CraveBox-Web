@@ -15,24 +15,21 @@ function Header() {
             <li className="px-4 py-2 bg-gray-100 m-4 rounded-lg text-black  hover:bg-gray-400">
               Online-Status
             </li>
-            <li className="px-4 py-2 bg-gray-100 m-4 rounded-lg  text-black  hover:bg-gray-400">
+            <Link to={"/"} className="px-4 py-2 bg-gray-100 m-4 rounded-lg  text-black  hover:bg-gray-400">
                 Home
-            </li>
-            <li className="px-4 py-2 bg-gray-100 m-4 rounded-lg  text-black  hover:bg-gray-400">
+            </Link>
+            <Link to={"/about"} className="px-4 py-2 bg-gray-100 m-4 rounded-lg  text-black  hover:bg-gray-400">
                 About
-            </li>
-            <li className="px-4 py-2 bg-gray-100 m-4 rounded-lg  text-black  hover:bg-gray-400">
+            </Link>
+            <Link to={"/contact"} className="px-4 py-2 bg-gray-100 m-4 rounded-lg  text-black  hover:bg-gray-400">
                 Contact Us
-            </li>
-            <li className="px-4 py-2 bg-gray-100 m-4 rounded-lg  text-black  hover:bg-gray-400">
+            </Link>
+            <Link to={"/grocery"} className="px-4 py-2 bg-gray-100 m-4 rounded-lg  text-black  hover:bg-gray-400">
                 Grocery
-            </li>
-            <li className="px-4 py-2 bg-gray-100 m-4 rounded-lg  text-black  hover:bg-gray-400">
-                Removelater
-            </li>
-            <li className="px-4 py-2 bg-gray-100 m-4 rounded-lg  text-black  hover:bg-gray-400">
+            </Link>
+            <Link to={"/login"} className="px-4 py-2 bg-gray-100 m-4 rounded-lg  text-black  hover:bg-gray-400">
                 Login
-            </li>
+            </Link>
           </ul>
         </div>
       </div>

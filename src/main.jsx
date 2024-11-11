@@ -9,20 +9,3 @@ createRoot(document.getElementById('root')).render(
     <App />
   </StrictMode>,
 )
-
-const appRouter = createBrowserRouter([{
-  path: '/',
-  element: <App />
-},{
-  path: '/home',
-  element: <Home />
-},{
-  path: '/about',
-  element: <About />
-},{
-  path: '/contact',
-  element: <Contact />
-},{
-  path: 'grocery',
-  element: <Grocery />
-}])

@@ -4,15 +4,14 @@ import About from "./About";
 import Contact from "./Contact";
 import Grocery from "./Grocery";
 import Body from "./Body";
-// import Error from "./Error";
-import { createBrowserRouter, Route, Router } from "react-router-dom";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 
 
-function AppLayout() {
+function Layout() {
   return (
-    <div className="AppLayout">
+    <div className="Layout">
       <Header/>
-      <Body/>
+      <Outlet/>
       <Footer/>
     </div>
   )
@@ -20,7 +19,7 @@ function AppLayout() {
 
 const appRouter = createBrowserRouter([{
   path: "/",
-  element: <AppLayout/>,
+  element: <Layout/>,
   children: [{
       path: "/",
       element: <Body />,
@@ -40,5 +39,11 @@ const appRouter = createBrowserRouter([{
   errorElement:<Error/>
 },
 ]);
+function AppLayout() {
+  return (
+    <RouterProvider router={appRouter}/>
+  )
+}
+
 
 export default AppLayout;
