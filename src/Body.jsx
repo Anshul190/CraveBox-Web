@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import RestrauntCard from "./RestrauntCard";
+import Shimmer from "./Shimmer";
 function Body(){
 
     const [ListofRestraunts, setListofRestraunts] = useState([]);
@@ -18,8 +19,11 @@ function Body(){
         setfilteredListofRestraunts(json.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     }
 
-    
-
+    if (ListofRestraunts.length === 0) {
+        return (
+                <Shimmer/>
+        )
+      }
 
     return(
         <div className="Body">
